@@ -1,9 +1,11 @@
 package ru.netology;
 
+import ru.netology.service.CashbackHackService;
+
 public class Main {
     public static void main(String[] args) {
-        BonusService service = new BonusService();
-        int result = service.calculateBonus(1000);
+        CashbackHackService service = new CashbackHackService();
+        int result = service.remain(900);
         System.out.println(result);
     }
 }

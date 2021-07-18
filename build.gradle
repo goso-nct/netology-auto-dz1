@@ -5,15 +5,16 @@ plugins {
 group 'ru.netology'
 version 'auto-dz1.v1'
 
+sourceCompatibility = 11
+
 repositories {
     mavenCentral()
 }
 
 dependencies {
-    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.0'
-    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.7.0'
+    testImplementation 'org.testng:testng:7.3.0'
 }
 
 test {
-    useJUnitPlatform()
+    useTestNG()
 }
